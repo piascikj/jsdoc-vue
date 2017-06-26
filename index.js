@@ -9,3 +9,12 @@ exports.handlers = {
     }
   }
 };
+
+exports.defineTags = function(dictionary) {
+  dictionary.defineTag('component', {
+    canHaveType: false,
+    canHaveName: true,
+    isNamespace: true,
+    mustHaveValue: true
+  })
+}
